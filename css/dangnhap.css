@@ -1,0 +1,302 @@
+body {
+    font-family: Arial;
+    margin: 0 auto;
+    padding: 0;
+  }
+  
+  .top-container {
+    background-color: #ffffff;
+    padding: 30px;
+    text-align: center;
+  }
+  
+  .header {
+    padding: 10px 16px;
+    background: rgb(255, 255, 255);
+    color: #1fd671;
+  }
+  
+  .content {
+    padding: 16px;
+  }
+  
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .sticky + .content {
+    padding-top: 102px;
+  }
+  
+
+/* trang chu */
+.top-container .header .icons{
+  width: 15%;
+}
+.icons{
+  float: right;
+}
+.logo img{
+  max-width: 100%;
+  margin-left: 20%;
+  margin-top: 0;
+}
+
+/* search form */
+ .search-form{
+  width: 90%;
+  right: 2rem;
+  display: none;
+}
+ .search-form.active{
+  transform: scaleY(1);
+}
+
+ .search-form input{
+  height: 100%;
+  width: 100%;
+  font-size: 1.6rem;
+  color:var(--black);
+  padding:1rem;
+  text-transform: none;
+}
+
+ .search-form label{
+  cursor: pointer;
+  font-size: 2.2rem;
+  margin-right: 1.5rem;
+  color:var(--black);
+}
+
+ .search-form label:hover{
+  color:var(--main-color);
+}
+
+/* header */
+.icons{
+  margin-top: 3%;
+  padding: 1%;
+  padding-right: 0;
+  width: 25%;
+  padding-left: 0px;
+}
+.icons a div{
+  margin-left: 10px;
+  font-size: 150%;
+  padding-top: 10px;
+
+}
+/* end header */
+/* sidenav */
+
+/* sidenav */
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+  margin-left: 2%;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+/* button*/
+.button{
+    size: 200%;
+    height: 200px;
+}
+button {
+  padding: 8px 30px;
+  outline: none;
+  border: none;
+  font-weight: bold;
+  color: rgb(0, 158, 71);
+  box-shadow: inset 0 0 20px rgb(4, 179, 91);
+  border: 1px solid green;
+}
+button:hover{
+    color: rgb(3, 3, 3);
+    box-shadow: inset 0 0 20px rgb(250, 247, 246);
+    
+}
+button:disabled{
+    color: rgb(75, 29, 29);
+    box-shadow:inset 0 0 20px gray;
+}
+/* side nav */
+
+/* menu */
+.menu{
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  padding: 0;
+  list-style: none;
+  margin: 0 auto;
+}
+.menu li{
+  padding: 8px 16px;
+  margin: auto;
+}
+.menu  li:hover{
+  background: rgb(210, 245, 212);
+  text-decoration: solid;
+  border-bottom: 1 solid red;
+}
+.menu li:hover>a{
+  color: #4524a0;
+  border-bottom: 2px solid red;
+}
+.has-submenu{
+  position: relative;
+}
+.has-submenu:hover .submenu{
+  display: block;
+  width: 200px;
+}
+.submenu{
+  list-style: none;
+  padding: 0;
+  position: absolute;
+  display: none;
+  top: 100%;
+  background: rgb(238, 196, 196);
+}
+.menu li a{
+  text-decoration: none;
+  color: black;
+}
+/* end */
+.timkiem:active .search-form{
+  display: block;
+  display: list-item;
+}
+/* Dangnhap */
+.dangnhap{
+width: 100%;
+height: 400px;
+background: rgb(255, 255, 255);
+}
+.huongdan{
+    float: left;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    border-right: 1px solid black;
+}
+.huongdan h1{
+    font-size: 250%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-top: 110px;
+    vertical-align: middle;
+    font-weight: bolder;
+}
+.odangnhap{
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+.odangnhap input{
+    margin-left: 100px;
+margin-top: 50px;
+    height: 60px;
+    width: 600px;
+}
+.account{
+    color: #10f577;
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-right: 20px;
+}
+/* foot */
+.footer{
+    background:var(--black);
+    text-align: center;
+    background: rgb(151, 150, 150);
+    margin-top: 50px;
+  }
+  
+  .footer .share{
+    padding:1rem 0;
+  }
+  
+  .footer .share a{
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    color:rgb(0, 0, 0);
+    border:var(--border);
+    margin:.3rem;
+    border-radius: 50%;
+  }
+  
+  .footer .share a:hover{
+    background-color: var(--main-color);
+  }
+  
+  .footer .links{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding:2rem 0;
+    gap:1rem;
+  }
+  
+  .footer .links a{
+    padding:.7rem 2rem;
+    color:rgb(0, 0, 0);
+    border:var(--border);
+    font-size: 2rem;
+  }
+  
+  .footer .links a:hover{
+    background:var(--main-color);
+  }
+  
+  .footer .credit{
+    font-size: 2rem;
+    color:rgb(0, 0, 0);
+    font-weight: lighter;
+    padding:1.5rem;
+  }
+  
+  .footer .credit span{
+    color:var(--main-color);
+  }
+  

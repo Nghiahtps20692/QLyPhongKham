@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanpham</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!--  -->
+    <link rel="stylesheet" href="./css/sanpham.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <!--link icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <div class="top-container">
+        <header id="myheader" class="header">
+
+            <a href="./index.html" class="logo">
+                <img src=" ./image/logo.png" alt="Logo">
+            </a>
+            <div class="icons">
+                <a href="./dangnhap.html">
+                    <div class="fas fa-user" id="user"></div>
+                </a>
+                <a class="timkiem" href="#">
+                    <div class="fa fa-search"></div>
+                </a>
+                <span id="main" style="font-size:30px;cursor:pointer;font-size: 150%;color: rgb(20, 250, 143);"
+                    onclick="openNav()">&#128722</span>
+
+            </div>
+            <!--form ẩn-->
+
+
+            <div class="search-form">
+                <input type="search" id="search-box" placeholder="search here...">
+                <label for="search-box" class="fas fa-search"></label>
+            </div>
+    </div>
+    <!--side nav -->
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="cart">
+            <h2>Giỏ Hàng</h2>
+            <p>
+                <a>Hiện chưa có sản phẩm</a>
+                <hr>
+                <a>TỔNG TIỀN:</a>
+                <a> 0đ</a><br>
+                    <button type="submit" class="form-button">XEM GIỎ HÀNG</button>&emsp;
+                    <button type="submit" class="form-button">THANH TOÁN</button>
+            </p>
+        </div>
+    </div>
+
+    <!-- end header scrip -->
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "400px";
+            document.getElementById("main").style.marginLeft = "250px";
+            document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+            document.body.style.backgroundColor = "white";
+        }
+    </script>
+    <div class="header" id="myHeader">
+        <ul class="menu" style="margin: auto 18%;">
+            <li><a href="./index.html">Trang chủ</a></li>
+            <li><a href="./index.html">Giới thiệu</a></li>
+            <li class="has-submenu"><a href="./sanpham.html">Sản phẩm</a>
+                <ul class="submenu">
+                    <li><a href="./sanpham.html">Ống hút dương xỉ</a></li>
+                    <hr>
+                    <li><a href="./sanpham.html">Ống hút gạo</a></li>
+                    <hr>
+                    <li><a href="./sanpham.html">Ống hút tre</a></li>
+                    <hr>
+                    <li><a href="./sanpham.html">Ống hút cỏ</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Trách nhiệm với môi trường(CER)</a>
+            </li>
+            <li><a href="#">Tin tức</a></li>
+            <li><a href="./Lienhe.html">Liên hệ</a></li>
+            <li><a href="#">Tra cứu đơn hàng</a></li>
+        </ul>
+    </div>
+    <hr>
+    <!-- phanthan -->
+    <div class="duongdan" style="background-color: rgb(202, 199, 199);">
+        <a href="./index.html" style="margin: 0px 0px 0px 10px;">Trang chủ /</a>
+        <a href="./sanpham.html" style="margin: 0px 0px 0px 5px;"> Danh mục /</a> <a style="margin: 0px 0px 0px 5px;"
+            href="./sanpham.html"> Sản phẩm </a>
+    </div>
+    <div class="banner" style="width: 100%;">
+        <a href="#"> <img style="width: 100%;" src="./image/bannersanpham.jpg" alt="Banner"></a>
+    </div>
+    <div class="sanpham">
+        <div style="text-align: center;" class="danhmuc">
+            <button>Ống hút gạo</button>
+            <button>Ống hút tre</button>
+            <button>Ống hút dương xỉ</button>
+            <button>Ống hút cỏ</button>
+        </div>
+        <div class="SPmoi">
+            <div class="tieude">
+                <h3>Tất cả sản phẩm</h3> <select>
+                    <option>Mới nhất</option>
+                    <option>Cũ nhất</option>
+                    <option>Gia : rẻ nhất</option>
+                    <option>Giá : đắt nhất</option>
+                </select>
+            </div>
+            <div class="sp">
+                <a href="#">
+                    <img src="./image/nuihut-hinh-dai-dien-ong-hut-gao-cho-nuoc-mau-tu-nhien-op2_e1e316c92177476baac45f689f6eee15_large.jpg"
+                        alt="ỐNg hút gạo">
+                    <div class="ten">Ống hút gạo cho nước<a href="#"></a></div>
+                    <div class="gia">35,000đ</div>
+                </a>
+            </div>
+            <div class="sp">
+                <img src="./image/tre.jpg" alt="ống hút tre">
+                <div class="ten"><a href="#">Ống hút tre</a></div>
+                <div class="gia">40,000đ</div>
+            </div>
+            <div class="sp">
+                <img src="./image/ỐNg hút cỏ.jpg" alt="Ông hút cỏ">
+                <div class="ten"><a href="#">Ống hút cỏ khô</a></div>
+                <div class="gia">40,000đ</div>
+            </div>
+            <div class="sp">
+                <img src="./image/onghutdx2.jpg" alt="Ống hút dương xỉ">
+                <div class="ten"><a href="#">Ống hút dương xỉ</a></div>
+                <div class="gia">40,000đ</div>
+            </div>
+            <div class="sp">
+                <img src="./image/cotuoi.jpg" alt="">
+                <div class="ten"><a href="#">Ống hút cỏ tươi</a></div>
+                <div class="gia">40,000đ</div>
+            </div>
+        </div>
+    </div>
+<div style="display: block; width: 100%; height: 20px;"></div>
+
+
+
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous"
+    src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v13.0&appId=1121506385248423&autoLogAppEvents=1"
+    nonce="R0WIMpCQ"></script>
+
+<!-- thanh nhap email -->
+<div class="hotro">
+    <div class="email">
+        <i class="fa fa-commenting-o" style="font-size:28px;margin-left: 2%;">Đăng kí nhận tin</i>
+    </div>
+    <div class="nhapvo">
+        <input type="text" style="height: 50px;width: 80%;" placeholder="Nhập email của bạn"><button
+            style="height: 50px;width: 15%;background-color: green;">Đăng kí</button>
+    </div>
+    <div class="sdt">
+        <i style="font-size:24px" class="fa">&#xf098;</i> Hỗ trợ / Mua hàng: 0888.330.336<br>
+    </div>
+</div>
+<!-- trc fooet -->
+<footer class="footer">
+    <div class="topfooter">
+    <div style="display:block;color: rgb(170, 204, 241);" class="boxngan">
+        <hr>
+    </div>
+        <div style="padding: 0px 0px 0px 15px;" class="thongtin1">
+            <div class="deMuc">
+                <h2>Giới thiệu</h2>
+            </div>
+            <p>
+                NuiHut - Ống hút gạo được thành lập với tầm<br>
+                nhìn và mục tiêu thay đổi thói quen của mọi<br>
+                người từ việc sử dụng ống hút nhựa sang sử<br>
+                dụng ống hút được làm từ gạo. Từ đó góp<br>
+                phần mang lại lợi ích bảo vệ sức khỏe cho<br>
+                người sử dụng cũng như giảm thiểu những ảnh<br>
+                hưởng xấu đến môi trường.<br>
+                <div class="chungnhan">
+                <img src="./image/dcthongbao.png" alt="chungnhan">
+            </div>
+            </p>
+        </div>
+        <div class="thongtin2">
+            <div class="deMuc">
+                <h2>Liên kết</h2>
+            </div><br>
+            <ul style="list-style: none;">
+                <li><a href="#">Giới thiệu</a></li><br>
+                <li><a href="#">Chính sách bảo mật</a></li><br>
+                <li><a href="#">Điều khoản dịch vụ</a></li><br>
+                <li><a href="#">Chính sách vận chuyển</a></li><br>
+                <li><a href="#">Chính sách đổi trả</a></li>
+            </ul>
+        </div>
+        <div class="thongtin3">
+            <div class="deMuc">
+                <h2>Thông tin liên hệ</h2>
+            </div><br>
+            <ul style="list-style: none;">
+                <li><a href="#">429/16 Điện Biên Phủ, P. 25, Q. Bình Thạnh, HCM, Việt Nam</a></li><br>
+                <li><a href="#">CSKH / Business Buyer : 0888.330.336</a></li><br>
+                <li><a href="#">Wholesale/ Export Buyer: 0888.155.322</a></li><br>
+                <li><a href="#">nuihut.ricestraw@gmail.com</a></li>
+            </ul>
+        </div>
+        <div class="thongtin4">
+            <div class="fb-comments" data-href="http://127.0.0.1:5500/21-PS20692-Nghia-ASM2/index.html"
+                data-width="" data-numposts="5"></div>
+        </div>
+
+    </div>
+<div class="botfooter">
+Copyright © 2022 NuiHut - Ống hút gạo. Powered by Haravan
+</div>
+</footer>
+<script src="https://uhchat.net/code.php?f=25dd2d"></script>
+</body>
+
+</html>

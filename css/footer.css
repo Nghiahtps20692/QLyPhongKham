@@ -1,0 +1,81 @@
+/* trc footer */
+.hotro{
+  margin-top: 100px;
+    width: 100%;
+    height: 60px;
+    margin-bottom: 10px;
+}
+.hotro .email{
+    width: 25%;
+    float: left;
+    padding: 15px;
+    height: 50px;
+}
+.hotro .nhapvo{
+    width: 50%;
+    float: left;
+    margin-left: 5%;
+    height: 50px;
+}
+.hotro .sdt{
+    float: left;
+    margin-left: 10px;
+    padding-top: 15px;
+}
+/* trc foet */
+
+/* footer */
+
+body{
+  width: auto;
+}
+.footer{
+  width: 100%;
+  height: 450px;
+  margin-left: 0px;
+  padding-left: 0px;
+    background: rgb(255, 255, 255);
+  }
+  .footer .topfooter{
+    width: 100%;
+    height: auto;
+  }
+.botfooter{
+  height: 50px;
+  text-align: center;
+    margin-top: 400px;
+    padding-top: 15px;
+    background-color: rgb(167, 167, 167);
+  }
+  .chungnhan{
+    width: inherit;
+
+  }
+  .chungnhan img{
+    width: 100%;
+  }
+  .deMuc{
+    font-family: Montserrat-SemiBoil;
+    font-size: 12.5pt;
+    padding-top: 25px;
+}
+.thongtin1{
+  float: left;
+  width: 30%;
+  padding-right: 0px;
+}
+.thongtin2{
+  float: left;
+  margin-left: -5%;
+  padding-right: 3%;
+}
+.thongtin3{
+  float: left;
+  padding-right: 2%;
+}
+.thongtin4{
+  float: left;
+  width: 25%;
+  padding: 0px 0px 0px 0px;
+  margin-left: 0px;
+}

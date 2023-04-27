@@ -1,0 +1,39 @@
+.phantracuu{
+    width: 100%;
+    height: auto;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+      background-color: rgb(255, 255, 255);
+
+}
+.col1phan4{
+    width: 25%;
+    float: left;
+}
+.anhtracuu{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.anhtracuu img{
+
+   width: 100%;
+   -webkit-transition: all 3s ease;
+   -moz-transition: all 3s ease;
+   -ms-transition: all 3s ease;
+   transition: all 3s ease;
+}
+
+.col1phan4 .anhtracuu img:hover{
+   
+    transform: scale(1.5);
+}
+.phantracuu .col3phan4{
+    float: left;
+    margin-left: 10px;
+    width: 70%;
+    height: 150%;
+    padding: 5% 5% 5% 5%;
+    text-align: center;
+    background-color: rgb(108, 108, 196);
+}
